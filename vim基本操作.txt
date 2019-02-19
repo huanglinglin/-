@@ -1,0 +1,40 @@
+1:在按下ESC退出后 在按下/ 进入查找模式
+2:使用:nohl 退出高亮
+
+
+
+3:拼写检查
+查看使用哪种语言
+echo &spelllang
+
+若要改变语言
+:set spell spellang=en_us,de..
+
+打开拼写检查和关闭拼写检查
+set spell
+set nospell 
+
+高亮选择
+
+SpellBad	不能识别的单词 (坏词)
+SpellCap	开头没有大写的单词
+SpellRare	偏僻词
+SpellLocal	不符合所选区域的拼写方式
+
+
+
+]s	移动到下一个拼写有问题的单词
+[s	移动到上一个拼写有问题的单词
+]S	类似于 "]s" 但只检查坏词，不检查偏僻词或其它区域的词
+[S	类似于 "]S" 但反向搜索
+
+要加入词汇到自定义的单词列表
+命令	含义
+zg	把光标所在的单词作为一个好 (good) 词加入到 spellfile
+zw	类似于"zg" 但标记单词为坏 (错误: wrong) 词
+
+
+set spelllang+=cjk  可以避免中文和英文查里面的冲突
+
+cp -i file1 dir
+将文件复制到这个目录下
