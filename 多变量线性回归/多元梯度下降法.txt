@@ -1,0 +1,30 @@
+如何设置多元线性回归假设的参数
+thea0 - thean
+
+讲解如何使用梯度下降法来处理多元线性回归
+
+参数thea0 - thean 
+看作向量
+thea  = thea0-thean 把thea堪称向量
+则代价函数为 J(thea) = 1/2m sum(1-m)(h(thea)x^i-y^i)^2
+
+
+梯度下降算法
+
+theaj = theaj - arfa*导数向*J(thea)
+
+看下执行梯度算法时 偏导数一项是什么样子的
+
+一个n有两个独立的更新规则
+新规则:
+
+theaj = theaj - arfa*1/m sum(1-m)(h(x)^i-y^i)*x_j^i
+
+注意以前是x^i代表一个特征量  现在是x_j^i代表一个了
+
+
+两个特征值就有三个更新规则
+
+
+
+
